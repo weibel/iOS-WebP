@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <libwebp/webp/decode.h>
-#import <libwebp/webp/encode.h>
+
+typedef enum WebPPreset WebPPreset;
+typedef struct WebPConfig WebPConfig;
 
 @interface UIImage (WebP)
 
