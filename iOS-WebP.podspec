@@ -10,4 +10,8 @@ Pod::Spec.new do |s|
   s.source_files		= 'iOS-WebP/*.{h,m}'
   s.requires_arc		= true
   s.dependency      'libwebp', '~> 0.5.0'
+  s.xcconfig = {
+    'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SD_WEBP=1',
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/libwebp/src'
+  }
 end
