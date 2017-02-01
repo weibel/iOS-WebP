@@ -11,7 +11,7 @@
 typedef enum WebPPreset WebPPreset;
 typedef struct WebPConfig WebPConfig;
 
-@interface UIImage (iOS-WebP)
+@interface UIImage (iOSWebP)
 
 + (UIImage*)imageWithWebPData:(NSData*)imgData;
 
