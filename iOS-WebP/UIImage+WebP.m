@@ -23,7 +23,7 @@ static void free_image_data(void *info, const void *data, size_t size)
 }
 
 
-@implementation UIImage (WebP)
+@implementation UIImage (iOS-WebP)
 
 #pragma mark - Private methods
 
